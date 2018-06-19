@@ -20,7 +20,7 @@
     "stageKey" : "requestPayloadProcessing"
   } ],
   "policyScope" : "GLOBAL",
-  "active" : false,
+  "active" : true,
   "global" : true,
   "systemPolicy" : false
 }

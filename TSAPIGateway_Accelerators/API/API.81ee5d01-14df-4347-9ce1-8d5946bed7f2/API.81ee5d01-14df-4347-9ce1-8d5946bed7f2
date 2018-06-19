@@ -38,37 +38,37 @@
           "consumes" : [ "application/json", "application/xml" ],
           "produces" : [ "application/json", "application/xml" ],
           "parameters" : [ {
-            "in" : "body",
-            "required" : false,
-            "allowEmptyValue" : false,
-            "readOnly" : false,
             "schema" : {
-              "application/json" : {
-                "schema" : "{\"schema\":null,\"type\":\"application/json\"}",
-                "type" : "StringSchemaModel"
-              },
               "application/xml" : {
                 "schema" : "",
+                "type" : "StringSchemaModel"
+              },
+              "application/json" : {
+                "schema" : "{\"schema\":null,\"type\":\"application/json\"}",
                 "type" : "StringSchemaModel"
               }
             },
             "examples" : {
-              "application/json" : "{\"testNativeService\":{\"Order\":{\"OrderID\":\"string\"}}}",
-              "application/xml" : "<com:testNativeService xmlns:com=\"http://WIN-HTTH4GH13AG/CommonAPIGateway.APIGatewayTest:getOrderDetails_wsd\">\r\n  <Order>\r\n    <OrderID>string</OrderID>\r\n  </Order>\r\n</com:testNativeService>"
-            }
+              "application/xml" : "<com:testNativeService xmlns:com=\"http://WIN-HTTH4GH13AG/CommonAPIGateway.APIGatewayTest:getOrderDetails_wsd\">\r\n  <Order>\r\n    <OrderID>string</OrderID>\r\n  </Order>\r\n</com:testNativeService>",
+              "application/json" : "{\"testNativeService\":{\"Order\":{\"OrderID\":\"string\"}}}"
+            },
+            "in" : "body",
+            "allowEmptyValue" : false,
+            "readOnly" : false,
+            "required" : false
           } ],
           "responses" : {
             "200" : {
               "schema" : {
-                "application/json" : null,
                 "application/xml" : {
                   "type" : "StringSchemaProperty",
                   "schema" : ""
-                }
+                },
+                "application/json" : null
               },
               "examples" : {
-                "application/json" : "{\"testNativeServiceResponse\":{\"OrderDetails\":\"\"}}",
-                "application/xml" : "<com:testNativeServiceResponse xmlns:com=\"http://WIN-HTTH4GH13AG/CommonAPIGateway.APIGatewayTest:getOrderDetails_wsd\">\r\n  <OrderDetails/>\r\n</com:testNativeServiceResponse>"
+                "application/xml" : "<com:testNativeServiceResponse xmlns:com=\"http://WIN-HTTH4GH13AG/CommonAPIGateway.APIGatewayTest:getOrderDetails_wsd\">\r\n  <OrderDetails/>\r\n</com:testNativeServiceResponse>",
+                "application/json" : "{\"testNativeServiceResponse\":{\"OrderDetails\":\"\"}}"
               }
             }
           },
