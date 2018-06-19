@@ -1,0 +1,7 @@
+{
+  "configId" : "mobileApp",
+  "properties" : {
+    "mobileApplications" : [ ],
+    "mobileAppDeviceTypes" : [ ]
+  }
+}

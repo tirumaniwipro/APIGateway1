@@ -1,0 +1,19 @@
+{
+  "id" : "38f8d0cc-db41-41e1-bc6b-29dd5a0f74ee",
+  "names" : [ {
+    "value" : "Anti Virus Filter",
+    "locale" : "en"
+  } ],
+  "templateKey" : "antiVirusFilter",
+  "parameters" : [ {
+    "templateKey" : "icapEngineName",
+    "values" : [ "" ]
+  }, {
+    "templateKey" : "icapHost",
+    "values" : [ "" ]
+  }, {
+    "templateKey" : "isAntiVirusScanEnabled",
+    "values" : [ "false" ]
+  } ],
+  "active" : false
+}

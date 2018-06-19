@@ -1,0 +1,88 @@
+{
+  "id" : "2f300e27-ed0c-41e8-b9b4-48d5efbc5756",
+  "names" : [ {
+    "value" : "JSONPolicy",
+    "locale" : "English"
+  } ],
+  "parameters" : [ {
+    "templateKey" : "customErrorMessage",
+    "values" : [ "Exceeded no of elements" ]
+  }, {
+    "templateKey" : "action",
+    "values" : [ "DENY" ]
+  }, {
+    "templateKey" : "requestType",
+    "values" : [ "ALL" ]
+  }, {
+    "templateKey" : "enableRule",
+    "values" : [ "Disable" ]
+  }, {
+    "templateKey" : "rule",
+    "values" : [ "JSONPolicy" ]
+  }, {
+    "templateKey" : "ruleDescription",
+    "values" : [ "" ]
+  }, {
+    "templateKey" : "ruleName",
+    "values" : [ "JSONPolicy" ]
+  }, {
+    "templateKey" : "ruleType",
+    "values" : [ "DENY" ]
+  }, {
+    "templateKey" : "index",
+    "values" : [ "0" ]
+  }, {
+    "templateKey" : "isEnterpriseGatewayLicensed",
+    "values" : [ "true" ]
+  }, {
+    "templateKey" : "alertOption",
+    "parameters" : [ {
+      "templateKey" : "alertOnEvery",
+      "values" : [ "false" ]
+    }, {
+      "templateKey" : "alertInterval",
+      "values" : [ "1" ]
+    }, {
+      "templateKey" : "alertType",
+      "values" : [ "flowService" ]
+    }, {
+      "templateKey" : "emailTo",
+      "values" : [ ]
+    }, {
+      "templateKey" : "flowServiceName",
+      "values" : [ "CommonAPIGateway:sendViolationsAlertNotification" ]
+    }, {
+      "templateKey" : "runAsUser",
+      "values" : [ "Administrator" ]
+    } ]
+  }, {
+    "templateKey" : "storedRuleType",
+    "values" : [ "DENY" ]
+  }, {
+    "templateKey" : "isRuleEnabled",
+    "values" : [ "false" ]
+  } ],
+  "policyEnforcements" : [ {
+    "enforcements" : [ {
+      "enforcementObjectId" : "4cad0a2d-b6f3-4719-8058-25ad76841eb0"
+    }, {
+      "enforcementObjectId" : "56dc6dab-4500-431a-828f-bfa77e41b511"
+    }, {
+      "enforcementObjectId" : "c8ce7533-b72c-413a-a2af-3e4feb079f7d"
+    }, {
+      "enforcementObjectId" : "32aa9107-93be-439d-b34f-4e025dc30293"
+    }, {
+      "enforcementObjectId" : "9ad5cc32-ff64-4b53-9889-889bbd282160"
+    }, {
+      "enforcementObjectId" : "65e076aa-51a0-472f-94bc-6738cec7db76"
+    }, {
+      "enforcementObjectId" : "e7d70a07-8983-47d9-95b3-e674e58b3cd3"
+    }, {
+      "enforcementObjectId" : "2ab04989-d717-47f1-982d-7314ddbd0fc8"
+    } ],
+    "stageKey" : "threatProtection"
+  } ],
+  "active" : false,
+  "global" : true,
+  "systemPolicy" : false
+}

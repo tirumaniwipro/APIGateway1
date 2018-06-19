@@ -1,0 +1,28 @@
+{
+  "configId" : "HTTPListener@9205",
+  "properties" : {
+    "curDelay" : "0",
+    "configURL" : "/WmRoot/configHTTP.dsp",
+    "keepAliveTimeout" : "20000",
+    "maxQueue" : "65534",
+    "listenerKey" : "HTTPListener@9205",
+    "portDescription" : "Default Primary Port",
+    "internalPort" : "-1",
+    "listenerType" : "Regular",
+    "pkg" : "WmRoot",
+    "ssl" : "false",
+    "enabled" : "true",
+    "suspended" : "false",
+    "jsseEnabledProtocols" : null,
+    "protocol" : "HTTP",
+    "port" : 9205,
+    "factoryKey" : "webMethods/HTTP",
+    "provider" : "webMethods",
+    "idProvider" : null,
+    "portAlias" : "DefaultPrimary",
+    "key" : "HTTPListener@9205",
+    "uniqueID" : "6ffdb380975a7326164ec407e3e",
+    "clientAuth" : "none",
+    "stepsize" : "10000"
+  }
+}

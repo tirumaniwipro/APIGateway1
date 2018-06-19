@@ -1,0 +1,19 @@
+{
+  "id" : "d4fa106a-fbbb-4779-8112-583ce5d58be1",
+  "names" : [ {
+    "value" : "Inbound Authentication - Transport",
+    "locale" : "en"
+  } ],
+  "templateKey" : "inboundAuthTransport",
+  "parameters" : [ {
+    "templateKey" : "httpBasicAuth",
+    "values" : [ "true" ]
+  }, {
+    "templateKey" : "openIDAuthentication",
+    "values" : [ "false" ]
+  }, {
+    "templateKey" : "jwtAuth",
+    "values" : [ "false" ]
+  } ],
+  "active" : false
+}

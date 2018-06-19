@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<asset_composite name="APIGatewayAssets" displayName="Assets for API Gateway" runtimeVersion="10.1" targetNamespace="http://namespaces.softwareag.com/webMethods/APIGateway" xmlns="http://namespaces.softwareag.com/acdl/1.0" xmlns:EDA="http://namespaces.softwareag.com/webMethods/EDA" xmlns:MWS="http://namespaces.softwareag.com/webMethods/MWS" xmlns:IS="http://namespaces.softwareag.com/webMethods/IS" xmlns:APIPORTAL="http://namespaces.softwareag.com/webMethods/APIPORTAL" xmlns:AgileApps="http://namespaces.softwareag.com/webMethods/AgileApps" xmlns:BROKER="http://namespaces.softwareag.com/webMethods/BROKER" xmlns:implDetails="http://namespaces.softwareag.com/acdl/implDetails" xmlns:UniversalMessaging="http://namespaces.softwareag.com/webMethods/UniversalMessaging" xmlns:TN="http://namespaces.softwareag.com/webMethods/TN" xmlns:RULES="http://namespaces.softwareag.com/webMethods/RULES" xmlns:BPM="http://namespaces.softwareag.com/webMethods/BPM" xmlns:Optimize="http://namespaces.softwareag.com/webMethods/Optimize">
+    <buildInfo name="BuildTimestamp" value="2018-06-19T03:07:57"/>
+    <asset name="PolicyAction.globalipdos" displayName="Global Denial of Service" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.c8ce7533-b72c-413a-a2af-3e4feb079f7d" displayName="Mobileapp Protection Filter" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Application.53d32b57-8322-469c-8e1b-de30dac5b465" displayName="MyApplication" isDeployable="true">
+        <implementation.generic type="Application"/>
+        <dependsOn>APIGateway:API.81ee5d01-14df-4347-9ce1-8d5946bed7f2</dependsOn>
+        <dependsOn>APIGateway:API.f05db4e5-68c1-4a35-9eb1-e3d78d4fa104</dependsOn>
+    </asset>
+    <asset name="API.81ee5d01-14df-4347-9ce1-8d5946bed7f2" displayName="native_test[1]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Application.53d32b57-8322-469c-8e1b-de30dac5b465</dependsOn>
+        <dependsOn>APIGateway:Policy.e16dd31b-9bdc-4cb1-9ab8-f07c561191f1</dependsOn>
+    </asset>
+    <asset name="Policy.e16dd31b-9bdc-4cb1-9ab8-f07c561191f1" displayName="Policy For API native_test[1]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.158a8b6e-8fba-4fb3-a948-f176960bfc9c</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.316cfe56-c467-44a5-9eb1-7cef13726517</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.93326844-d70c-477d-829b-0dd7cf3cee18</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.c7ae458c-fc40-4c25-97ee-522e9476a112</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.f9a6d7b7-ed4b-4571-8db5-4b2fbc4a8715</dependsOn>
+    </asset>
+    <asset name="PolicyAction.f9a6d7b7-ed4b-4571-8db5-4b2fbc4a8715" displayName="Policy Action [Invoke webMethods IS] -&gt; Policy For API native_test[1]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.158a8b6e-8fba-4fb3-a948-f176960bfc9c" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API native_test[1]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.c7ae458c-fc40-4c25-97ee-522e9476a112" displayName="Policy Action [Inbound Authentication - Transport] -&gt; Policy For API native_test[1]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.316cfe56-c467-44a5-9eb1-7cef13726517" displayName="Policy Action [Identify &amp; Authorize Application] -&gt; Policy For API native_test[1]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.93326844-d70c-477d-829b-0dd7cf3cee18" displayName="Policy Action [Require HTTP / HTTPS] -&gt; Policy For API native_test[1]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="API.f05db4e5-68c1-4a35-9eb1-e3d78d4fa104" displayName="testNative_2[1]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Application.53d32b57-8322-469c-8e1b-de30dac5b465</dependsOn>
+        <dependsOn>APIGateway:Policy.51c4fb8e-ef3d-4d5f-9f24-59b6563cc9c2</dependsOn>
+    </asset>
+    <asset name="Policy.51c4fb8e-ef3d-4d5f-9f24-59b6563cc9c2" displayName="Policy For API testNative_2[1]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.a1f612eb-aeb3-4296-a8d2-874db95dbd78</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.ab985993-732f-4ff7-9a80-9c507cf63c22</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.d4fa106a-fbbb-4779-8112-583ce5d58be1</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.f6a04cf6-5014-44e5-a18d-0ae9a93b20d1</dependsOn>
+    </asset>
+    <asset name="PolicyAction.f6a04cf6-5014-44e5-a18d-0ae9a93b20d1" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API testNative_2[1]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.a1f612eb-aeb3-4296-a8d2-874db95dbd78" displayName="Policy Action [Identify &amp; Authorize Application] -&gt; Policy For API testNative_2[1]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.d4fa106a-fbbb-4779-8112-583ce5d58be1" displayName="Policy Action [Inbound Authentication - Transport] -&gt; Policy For API testNative_2[1]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.ab985993-732f-4ff7-9a80-9c507cf63c22" displayName="Policy Action [Require HTTP / HTTPS] -&gt; Policy For API testNative_2[1]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.cd304d71-1c94-4011-867b-26c223c625a1" displayName="JSON Threat Protection Filter" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.a257d370-e485-4bfe-a017-06826de1fb81" displayName="MessageSize_Filter[Threat Protection]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.0d61dfdc-2078-49a5-a749-f13ff0a50a75</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.38f8d0cc-db41-41e1-bc6b-29dd5a0f74ee</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.5015f53b-8a32-4126-bef1-d98e77ea6c69</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.7aa77ac4-14d7-4047-b33f-5c69e0a728c9</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.8f175833-1260-40eb-9080-ed6c53d27cdf</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.8f853926-bc28-4395-80d7-9e6af85cf36f</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.cd304d71-1c94-4011-867b-26c223c625a1</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.e7a1cd8a-568b-427a-b023-e471b02e41ba</dependsOn>
+    </asset>
+    <asset name="PolicyAction.7aa77ac4-14d7-4047-b33f-5c69e0a728c9" displayName="Message Size Limit Filter" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.8f175833-1260-40eb-9080-ed6c53d27cdf" displayName="OAuth Filter" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.0d61dfdc-2078-49a5-a749-f13ff0a50a75" displayName="Mobileapp Protection Filter" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.5015f53b-8a32-4126-bef1-d98e77ea6c69" displayName="SQL Injection Filter" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.38f8d0cc-db41-41e1-bc6b-29dd5a0f74ee" displayName="Anti Virus Filter" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.e7a1cd8a-568b-427a-b023-e471b02e41ba" displayName="XML Threat Protection Filter" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.8f853926-bc28-4395-80d7-9e6af85cf36f" displayName="Custom Filter" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.56dc6dab-4500-431a-828f-bfa77e41b511" displayName="OAuth Filter" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.4cad0a2d-b6f3-4719-8058-25ad76841eb0" displayName="Message Size Limit Filter" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AdministratorSetting.HTTPListener@9205" displayName="HTTPListener@9205" isDeployable="true">
+        <implementation.generic type="AdministratorSetting"/>
+    </asset>
+    <asset name="PolicyAction.2ab04989-d717-47f1-982d-7314ddbd0fc8" displayName="Custom Filter" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.74777745-7fe0-4c5f-830c-8309b8f99dcf" displayName="Policy Action [Invoke webMethods IS] -&gt; RequestProcessing_Policy" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.GlobalLogInvocationPolicy" displayName="Transaction logging[Global Policy]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.GlobalLogInvocationPolicyAction</dependsOn>
+    </asset>
+    <asset name="PolicyAction.GlobalLogInvocationPolicyAction" displayName="Policy Action [Log Invocation] -&gt; Transaction logging" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.9ad5cc32-ff64-4b53-9889-889bbd282160" displayName="Anti Virus Filter" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AdministratorSetting.HTTPListener@9200" displayName="HTTPListener@9200" isDeployable="true">
+        <implementation.generic type="AdministratorSetting"/>
+    </asset>
+    <asset name="AdministratorSetting.HTTPListener@6666" displayName="HTTPListener@6666" isDeployable="true">
+        <implementation.generic type="AdministratorSetting"/>
+    </asset>
+    <asset name="PolicyAction.65e076aa-51a0-472f-94bc-6738cec7db76" displayName="JSON Threat Protection Filter" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Policy.2f300e27-ed0c-41e8-b9b4-48d5efbc5756" displayName="JSONPolicy[Threat Protection]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.2ab04989-d717-47f1-982d-7314ddbd0fc8</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.32aa9107-93be-439d-b34f-4e025dc30293</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.4cad0a2d-b6f3-4719-8058-25ad76841eb0</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.56dc6dab-4500-431a-828f-bfa77e41b511</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.65e076aa-51a0-472f-94bc-6738cec7db76</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.9ad5cc32-ff64-4b53-9889-889bbd282160</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.c8ce7533-b72c-413a-a2af-3e4feb079f7d</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.e7d70a07-8983-47d9-95b3-e674e58b3cd3</dependsOn>
+    </asset>
+    <asset name="PolicyAction.32aa9107-93be-439d-b34f-4e025dc30293" displayName="SQL Injection Filter" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.e7d70a07-8983-47d9-95b3-e674e58b3cd3" displayName="XML Threat Protection Filter" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.egviolationalert" displayName="Gateway Rule Violation Alerts" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="AdministratorSetting.HTTPListener@6667" displayName="HTTPListener@6667" isDeployable="true">
+        <implementation.generic type="AdministratorSetting"/>
+    </asset>
+    <asset name="Policy.f11f24d2-2193-4ffe-836e-9ed5d6e536ed" displayName="RequestProcessing_Policy[Global Policy]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.74777745-7fe0-4c5f-830c-8309b8f99dcf</dependsOn>
+    </asset>
+    <asset name="AdministratorSetting.mobileApp" displayName="mobileApp" isDeployable="true">
+        <implementation.generic type="AdministratorSetting"/>
+    </asset>
+    <asset name="Alias.4dd1968c-89b2-4746-8fcd-e208687433f3" displayName="OKTA" isDeployable="true">
+        <implementation.generic type="Alias"/>
+    </asset>
+    <asset name="Alias.c903f20b-f56e-4d73-90db-1282ad0d4fcf" displayName="PingFederate" isDeployable="true">
+        <implementation.generic type="Alias"/>
+    </asset>
+</asset_composite>

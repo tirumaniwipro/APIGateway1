@@ -1,0 +1,55 @@
+{
+  "id" : "e7d70a07-8983-47d9-95b3-e674e58b3cd3",
+  "names" : [ {
+    "value" : "XML Threat Protection Filter",
+    "locale" : "en"
+  } ],
+  "templateKey" : "xmlThreatProtectionFilter",
+  "parameters" : [ {
+    "templateKey" : "maxNodeDepth",
+    "values" : [ "-1" ]
+  }, {
+    "templateKey" : "maxAttributeCountPerElement",
+    "values" : [ "-1" ]
+  }, {
+    "templateKey" : "maxChildCount",
+    "values" : [ "-1" ]
+  }, {
+    "templateKey" : "maxTextLength",
+    "values" : [ "-1" ]
+  }, {
+    "templateKey" : "maxAttributeValueLength",
+    "values" : [ "-1" ]
+  }, {
+    "templateKey" : "maxCommentLength",
+    "values" : [ "-1" ]
+  }, {
+    "templateKey" : "maxElementNameLength",
+    "values" : [ "-1" ]
+  }, {
+    "templateKey" : "maxAttributeNameLength",
+    "values" : [ "-1" ]
+  }, {
+    "templateKey" : "maxNamespacePrefixLength",
+    "values" : [ "-1" ]
+  }, {
+    "templateKey" : "maxNamespaceCountPerElement",
+    "values" : [ "-1" ]
+  }, {
+    "templateKey" : "maxNamespaceURILength",
+    "values" : [ "-1" ]
+  }, {
+    "templateKey" : "maxPITargetLength",
+    "values" : [ "-1" ]
+  }, {
+    "templateKey" : "maxPIDataLength",
+    "values" : [ "-1" ]
+  }, {
+    "templateKey" : "isXMLThreatProtectionEnabled",
+    "values" : [ "false" ]
+  }, {
+    "templateKey" : "applicableContentTypes",
+    "values" : [ ]
+  } ],
+  "active" : false
+}

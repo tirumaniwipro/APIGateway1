@@ -1,0 +1,34 @@
+{
+  "type" : "clientMetadataMapping",
+  "id" : "c903f20b-f56e-4d73-90db-1282ad0d4fcf",
+  "name" : "PingFederate",
+  "type" : "clientMetadataMapping",
+  "providerName" : "PingFederate",
+  "implNames" : {
+    "grant_types" : "grantTypes",
+    "logo_uri" : "logoUrl",
+    "scope" : "restrictedScopes",
+    "client_secret" : "secret",
+    "redirect_uris" : "redirectUris",
+    "client_name" : "name",
+    "client_id" : "clientId"
+  },
+  "extendedValues" : { },
+  "extendedValuesV2" : [ {
+    "endpointType" : "CLIENT_READ",
+    "key" : "restrictScopes",
+    "value" : "true"
+  }, {
+    "endpointType" : "CLIENT_REGISTRATION",
+    "key" : "restrictScopes",
+    "value" : "true"
+  }, {
+    "endpointType" : "CLIENT_UPDATE",
+    "key" : "restrictScopes",
+    "value" : "true"
+  }, {
+    "endpointType" : "CLIENT_DELETE",
+    "key" : "restrictScopes",
+    "value" : "true"
+  } ]
+}

@@ -1,0 +1,26 @@
+{
+  "id" : "f11f24d2-2193-4ffe-836e-9ed5d6e536ed",
+  "names" : [ {
+    "value" : "RequestProcessing_Policy",
+    "locale" : "English"
+  } ],
+  "descriptions" : [ {
+    "value" : "This is a pre-Processing request service",
+    "locale" : "English"
+  } ],
+  "scope" : {
+    "applicableAPITypes" : [ "REST", "SOAP" ],
+    "scopeConditions" : [ ],
+    "logicalConnector" : "AND"
+  },
+  "policyEnforcements" : [ {
+    "enforcements" : [ {
+      "enforcementObjectId" : "74777745-7fe0-4c5f-830c-8309b8f99dcf"
+    } ],
+    "stageKey" : "requestPayloadProcessing"
+  } ],
+  "policyScope" : "GLOBAL",
+  "active" : false,
+  "global" : true,
+  "systemPolicy" : false
+}

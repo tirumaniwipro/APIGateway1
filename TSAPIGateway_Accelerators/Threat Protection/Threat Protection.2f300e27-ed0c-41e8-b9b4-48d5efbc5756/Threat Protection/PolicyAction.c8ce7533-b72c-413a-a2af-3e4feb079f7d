@@ -1,0 +1,13 @@
+{
+  "id" : "c8ce7533-b72c-413a-a2af-3e4feb079f7d",
+  "names" : [ {
+    "value" : "Mobileapp Protection Filter",
+    "locale" : "en"
+  } ],
+  "templateKey" : "mobileAppProtectionFilter",
+  "parameters" : [ {
+    "templateKey" : "isMobileAppProtectionEnabled",
+    "values" : [ "false" ]
+  } ],
+  "active" : false
+}

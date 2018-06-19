@@ -1,0 +1,16 @@
+{
+  "id" : "f9a6d7b7-ed4b-4571-8db5-4b2fbc4a8715",
+  "names" : [ {
+    "value" : "Invoke webMethods IS",
+    "locale" : "en"
+  } ],
+  "templateKey" : "invokeESB",
+  "parameters" : [ {
+    "templateKey" : "serviceNames",
+    "values" : [ "CommonAPIGateway:PreProcessingRequestService" ]
+  }, {
+    "templateKey" : "esbAlias",
+    "values" : [ ]
+  } ],
+  "active" : false
+}

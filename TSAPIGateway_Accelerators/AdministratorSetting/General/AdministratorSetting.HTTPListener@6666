@@ -1,0 +1,29 @@
+{
+  "configId" : "HTTPListener@6666",
+  "userName" : "Administrator",
+  "properties" : {
+    "curDelay" : "0",
+    "configURL" : "/WmRoot/configHTTP.dsp",
+    "keepAliveTimeout" : "20000",
+    "maxQueue" : "200",
+    "listenerKey" : "HTTPListener@6666",
+    "portDescription" : "Integration Server HTTP port: 6666",
+    "internalPort" : "6667",
+    "listenerType" : "revinvoke",
+    "pkg" : "WmRoot",
+    "ssl" : "false",
+    "enabled" : "true",
+    "suspended" : "false",
+    "jsseEnabledProtocols" : null,
+    "protocol" : "HTTP",
+    "port" : 6666,
+    "factoryKey" : "webMethods/HTTP",
+    "provider" : "webMethods",
+    "idProvider" : null,
+    "portAlias" : "ExPortAlias",
+    "key" : "HTTPListener@6666",
+    "uniqueID" : "105ada7785821bc2164fc1ca4df",
+    "clientAuth" : "none",
+    "stepsize" : "10000"
+  }
+}

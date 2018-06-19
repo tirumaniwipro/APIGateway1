@@ -1,0 +1,31 @@
+{
+  "id" : "cd304d71-1c94-4011-867b-26c223c625a1",
+  "names" : [ {
+    "value" : "JSON Threat Protection Filter",
+    "locale" : "en"
+  } ],
+  "templateKey" : "jsonThreatProtectionFilter",
+  "parameters" : [ {
+    "templateKey" : "maxContainerDepth",
+    "values" : [ "-1" ]
+  }, {
+    "templateKey" : "maxObjectEntryCount",
+    "values" : [ "-1" ]
+  }, {
+    "templateKey" : "maxObjectEntryNameLength",
+    "values" : [ "-1" ]
+  }, {
+    "templateKey" : "maxArrayElementCount",
+    "values" : [ "-1" ]
+  }, {
+    "templateKey" : "maxStringLength",
+    "values" : [ "-1" ]
+  }, {
+    "templateKey" : "isJSONThreatProtectionEnabled",
+    "values" : [ "false" ]
+  }, {
+    "templateKey" : "applicableContentTypes",
+    "values" : [ ]
+  } ],
+  "active" : false
+}

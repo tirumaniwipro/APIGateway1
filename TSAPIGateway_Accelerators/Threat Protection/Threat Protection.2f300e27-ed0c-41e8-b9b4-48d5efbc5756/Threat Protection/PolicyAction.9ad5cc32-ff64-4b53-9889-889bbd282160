@@ -1,0 +1,22 @@
+{
+  "id" : "9ad5cc32-ff64-4b53-9889-889bbd282160",
+  "names" : [ {
+    "value" : "Anti Virus Filter",
+    "locale" : "en"
+  } ],
+  "templateKey" : "antiVirusFilter",
+  "parameters" : [ {
+    "templateKey" : "icapEngineName",
+    "values" : [ "" ]
+  }, {
+    "templateKey" : "icapService",
+    "values" : [ "" ]
+  }, {
+    "templateKey" : "isAntiVirusScanEnabled",
+    "values" : [ "false" ]
+  }, {
+    "templateKey" : "isPassedFromUI",
+    "values" : [ "true" ]
+  } ],
+  "active" : false
+}

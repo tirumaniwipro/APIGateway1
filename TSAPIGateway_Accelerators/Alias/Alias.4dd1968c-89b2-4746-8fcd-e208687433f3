@@ -1,0 +1,30 @@
+{
+  "type" : "clientMetadataMapping",
+  "id" : "4dd1968c-89b2-4746-8fcd-e208687433f3",
+  "name" : "OKTA",
+  "type" : "clientMetadataMapping",
+  "providerName" : "OKTA",
+  "implNames" : { },
+  "extendedValues" : { },
+  "extendedValuesV2" : [ {
+    "endpointType" : "CLIENT_READ",
+    "key" : "application_type",
+    "value" : "web"
+  }, {
+    "endpointType" : "CLIENT_REGISTRATION",
+    "key" : "application_type",
+    "value" : "web"
+  }, {
+    "endpointType" : "CLIENT_UPDATE",
+    "key" : "application_type",
+    "value" : "web"
+  }, {
+    "endpointType" : "CLIENT_DELETE",
+    "key" : "application_type",
+    "value" : "web"
+  }, {
+    "endpointType" : "SCOPE_UPDATE",
+    "key" : "metadataPublish",
+    "value" : "ALL_CLIENTS"
+  } ]
+}

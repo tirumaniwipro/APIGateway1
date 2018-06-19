@@ -1,0 +1,19 @@
+{
+  "id" : "f6a04cf6-5014-44e5-a18d-0ae9a93b20d1",
+  "names" : [ {
+    "value" : "Straight Through Routing",
+    "locale" : "en"
+  } ],
+  "templateKey" : "straightThroughRouting",
+  "parameters" : [ {
+    "templateKey" : "endpointUri",
+    "values" : [ "http://localhost:9105/ws/CommonAPIGateway.APIGatewayTest:getOrderDetails_wsd/CommonAPIGateway_APIGatewayTest_getOrderDetails_wsd_Port" ]
+  }, {
+    "templateKey" : "soapOptimize",
+    "values" : [ "None" ]
+  }, {
+    "templateKey" : "passSecurityHeaders",
+    "values" : [ "false" ]
+  } ],
+  "active" : false
+}

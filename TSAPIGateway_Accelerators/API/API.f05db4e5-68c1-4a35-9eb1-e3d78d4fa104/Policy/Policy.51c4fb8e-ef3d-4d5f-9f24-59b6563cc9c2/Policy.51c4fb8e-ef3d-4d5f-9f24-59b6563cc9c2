@@ -1,0 +1,36 @@
+{
+  "id" : "51c4fb8e-ef3d-4d5f-9f24-59b6563cc9c2",
+  "names" : [ {
+    "value" : "Default Policy for API testNative_2",
+    "locale" : "English"
+  } ],
+  "descriptions" : [ {
+    "value" : "",
+    "locale" : "English"
+  } ],
+  "scope" : {
+    "scopeConditions" : [ ]
+  },
+  "policyEnforcements" : [ {
+    "enforcements" : [ {
+      "enforcementObjectId" : "f6a04cf6-5014-44e5-a18d-0ae9a93b20d1"
+    } ],
+    "stageKey" : "routing"
+  }, {
+    "enforcements" : [ {
+      "enforcementObjectId" : "a1f612eb-aeb3-4296-a8d2-874db95dbd78"
+    }, {
+      "enforcementObjectId" : "d4fa106a-fbbb-4779-8112-583ce5d58be1"
+    } ],
+    "stageKey" : "IAM"
+  }, {
+    "enforcements" : [ {
+      "enforcementObjectId" : "ab985993-732f-4ff7-9a80-9c507cf63c22"
+    } ],
+    "stageKey" : "transport"
+  } ],
+  "policyScope" : "SERVICE",
+  "active" : false,
+  "global" : false,
+  "systemPolicy" : false
+}

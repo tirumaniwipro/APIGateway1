@@ -1,0 +1,16 @@
+{
+  "id" : "4cad0a2d-b6f3-4719-8058-25ad76841eb0",
+  "names" : [ {
+    "value" : "Message Size Limit Filter",
+    "locale" : "en"
+  } ],
+  "templateKey" : "MsgSizeLimitFilter",
+  "parameters" : [ {
+    "templateKey" : "isMessageSizeEnabled",
+    "values" : [ "false" ]
+  }, {
+    "templateKey" : "isPassedFromUI",
+    "values" : [ "true" ]
+  } ],
+  "active" : false
+}

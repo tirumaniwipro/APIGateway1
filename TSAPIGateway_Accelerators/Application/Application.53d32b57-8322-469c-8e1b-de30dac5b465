@@ -1,0 +1,43 @@
+{
+  "applicationID" : "53d32b57-8322-469c-8e1b-de30dac5b465",
+  "name" : "MyApplication",
+  "owner" : "Administrator",
+  "identifiers" : [ {
+    "id" : "25188b12-ad61-455a-a9ae-744c6b371d8f",
+    "key" : "httpBasicAuth",
+    "swaggerName" : "",
+    "swaggerValue" : [ ],
+    "namedValues" : [ {
+      "name" : "Username",
+      "values" : [ "Administrator" ]
+    } ]
+  } ],
+  "contactEmails" : [ ],
+  "accessTokens" : {
+    "apiAccessKey" : {
+      "apiAccessKey" : "0b8b78ab-1807-4cc4-8afe-62c8f0fccba5"
+    },
+    "oauth2Token" : {
+      "type" : "confidential",
+      "clientId" : "119e89c9-8557-453e-99a3-ab668cefb761",
+      "clientSecret" : "d2e90378-44a1-47eb-9265-6dd74907f5e3",
+      "clientName" : "MyApplication-f1a43806-ff64-4ce8-9b49-697c1cd2c13c",
+      "scopes" : [ "81ee5d01-14df-4347-9ce1-8d5946bed7f2", "f05db4e5-68c1-4a35-9eb1-e3d78d4fa104" ],
+      "expirationInterval" : "3600",
+      "refreshCount" : "0",
+      "accessTokenRequestURI" : [ ],
+      "redirectUris" : [ "https://placeholder_redirect_uri" ]
+    }
+  },
+  "creationDate" : "2018-06-15 07:42:21 GMT",
+  "lastModified" : "2018-06-18 10:29:01 GMT",
+  "siteURLs" : [ ],
+  "version" : "1.0",
+  "token_lifetime" : "3600",
+  "token_refresh_count" : "0",
+  "redirectUris" : [ "https://placeholder_redirect_uri" ],
+  "properties" : {
+    "requesterComment" : null
+  },
+  "subscription" : false
+}

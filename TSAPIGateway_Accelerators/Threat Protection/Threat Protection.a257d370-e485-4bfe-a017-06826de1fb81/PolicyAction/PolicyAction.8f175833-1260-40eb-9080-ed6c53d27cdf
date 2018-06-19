@@ -1,0 +1,16 @@
+{
+  "id" : "8f175833-1260-40eb-9080-ed6c53d27cdf",
+  "names" : [ {
+    "value" : "OAuth Filter",
+    "locale" : "en"
+  } ],
+  "templateKey" : "OAuthFilter",
+  "parameters" : [ {
+    "templateKey" : "isOAuthEnabled",
+    "values" : [ "false" ]
+  }, {
+    "templateKey" : "isRequireOAuthCredentials",
+    "values" : [ "false" ]
+  } ],
+  "active" : false
+}

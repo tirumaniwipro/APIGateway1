@@ -1,0 +1,25 @@
+{
+  "id" : "5015f53b-8a32-4126-bef1-d98e77ea6c69",
+  "names" : [ {
+    "value" : "SQL Injection Filter",
+    "locale" : "en"
+  } ],
+  "templateKey" : "sqlInjectionFilter",
+  "parameters" : [ {
+    "templateKey" : "SQLInjectionParameters",
+    "values" : [ ]
+  }, {
+    "templateKey" : "SQLInjectionDBList",
+    "values" : [ "NONE" ]
+  }, {
+    "templateKey" : "isDBSQLInjectionEnabled",
+    "values" : [ "false" ]
+  }, {
+    "templateKey" : "isSQLInjectionFilterEnabled",
+    "values" : [ "false" ]
+  }, {
+    "templateKey" : "isStdSQLInjectionEnabled",
+    "values" : [ "false" ]
+  } ],
+  "active" : false
+}
